@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgriHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Header Start -->
+     <header>
+        <!-- slider start -->
+         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/img-1.jfif" height="350px" class="d-block w-100" alt=".1..">
+    </div>
+    <div class="carousel-item">
+      <img src="images/img-2.jfif" height="350px" class="d-block w-100" alt=".2..">
+    </div>
+    <div class="carousel-item">
+      <img src="images/img-3.jfif" height="350px" class="d-block w-100" alt=".3..">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        <!-- slider end -->
+         <!-- nav start -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AgriHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5 active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5" href="farm.html">Farming Guides</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5" href="crop.html">Crop Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5" href="pest.html">Pest Control</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5" href="contact.html">Contact</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex align-items-center" role="search">
+        <input class="form-control form-control-sm me-2 rounded-pill" type="search" placeholder="Search site..." aria-label="Search">
+        <button class="btn btn-success btn-sm rounded-pill" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+         <!-- nav end -->
+     </header>
+    <!-- Header End -->
+
+    <!-- Hero start -->
+     <section class="container">
+        <p class="display-4 text-center mt-3">Contact</p>
+        <div class="row">
+          <div class="col-sm-6 card p-5">
+            <h2 class="text-bg-primary p-2">For Direct Contact</h2>
+            <p>Name: Mr. X</p>
+            <p>Designation: HR</p>
+            <p>Phone: +88026543217</p>
+          </div>
+          <div class="col-sm-6 card p-5">
+            <h2 class="text-bg-primary p-2">Touch With Us</h2>
+            <form id="f" class="row g-3 needs-validation" novalidate>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+              <input type="email" class="form-control" id="validationCustom01" placeholder="Email" required>
+              <input type="tel" class="form-control" id="validationCustom01" placeholder="+880...." required>
+              <input type="file" class="form-control" id="validationCustom01" placeholder="Upload Picture or Document">
+              <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+              <button class="btn btn-primary" type="submit">Submit form</button>
+
+            </form>
+            <script>
+              f.addEventListener('submit', event => {
+                if (!f.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                  f.classList.add('was-validated')
+                }else alert("Submitted!")
+
+                
+              }, false)
+
+            </script>
+          </div>
+        </div>
+     </section>
+    <!-- Hero end -->
+
+    <!-- footer start -->
+     <footer>
+        <div class="text-bg-primary p-4 text-center">&copy; 2025 | Agricultural Hub | All rights reserved</div>
+
+     </footer>
+    <!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
