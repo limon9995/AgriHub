@@ -1,0 +1,7 @@
+{
+  "rules": [
+    {"keywords": ["price", "cost", "dam", "দাম"], "reply": "Thanks for asking! Please message us for the latest prices."},
+    {"keywords": ["where", "location", "address", "কোথায়"], "reply": "You can find our contact details on our website."}
+  ],
+  "default": "Thank you for your comment! We'll get back to you soon."
+}

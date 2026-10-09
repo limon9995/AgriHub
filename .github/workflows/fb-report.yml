@@ -1,0 +1,21 @@
+name: FB weekly report
+on:
+  schedule: [{cron: "0 3 * * 1"}]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r fb_automation/requirements.txt
+      - run: python fb_automation/main.py report
+        env:
+          FB_USER_TOKEN: ${{ secrets.FB_USER_TOKEN }}
+      - run: |
+          git config user.name "fb-bot"; git config user.email "fb-bot@users.noreply.github.com"
+          git add reports
+          git diff --cached --quiet || (git commit -m "Add weekly FB report" && git push)
